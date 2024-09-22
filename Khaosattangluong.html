@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Công ty TNHH AAD Việt Nam</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Bạn có muốn tăng lương hay không?</h1>
+        <div class="buttons">
+            <button id="no-btn">Yes</button>
+            <button id="yes-btn" onclick="castVote()">No</button>
+        </div>
+        <div class="popup" id="popup">
+            <p>Tuyệt vời! Thay mặt Ban Giám đốc xin cám ơn các bạn! Các bạn thật là những nhân viên tốt! Tôi biết các
+                bạn không bao giờ đòi tăng lương!!!
+            </p>
+            <h3>Các bạn hãy trở lại với công việc! </h3>
+            <p>Chúc các bạn hạnh phúc, sức khoẻ </p>
+            <p>Chân thành cảm ơn! </p>
+            <h1>Giám đốc công ty! </h1>
+            <p>Làm ơn nhấn phím "Gửi mail" để cho Ban Giám Đốc!</p>
+            <p id="voteCount">Số lượt vote: 0</p> <!-- Vote Count Display -->
+
+            <!-- Send Email Button -->
+            <!-- <button id="sendEmailButton" onclick="sendEmail()">Gửi email</button> -->
+            <!-- <button id="sendEmailButton" onclick="promptDOB()">Gửi email</button> -->
+            <button id="sendEmailButton" onclick="promptUserInfo()">Gửi email</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

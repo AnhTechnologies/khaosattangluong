@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo sát tăng lương</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .note {
+            color: red;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #0066cc;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0052a3;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .button {
+                font-size: 1rem;
+                padding: 10px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Chào mừng các bạn đến với chương trình thăm dò tăng lương do Ban Giám đốc Công ty TNHH AAD Việt Nam tiến
+            hành</h1>
+        <p>Làm ơn trả lời những câu hỏi sau:</p>
+        <p class="note">Việc tăng lương là hoàn toàn tùy thuộc vào bạn muốn tăng hay không!!!</p>
+        <a href="#" class="button" id="nextButton" target="_blank">Tiếp</a>
+    </div>
+
+    <script>
+        document.getElementById("nextButton").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default action of the link
+            window.location.href = "Khaosattangluong.html"; // Replace with your desired page URL
+        });
+    </script>
+
+</body>
+
+</html>

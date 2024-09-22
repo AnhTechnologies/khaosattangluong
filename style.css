@@ -1,0 +1,137 @@
+/* Phong cách mặc định sẽ áp dụng cho màn hình lớn (desktop) */
+body {
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  margin: 0;
+  background-color: #f9f4f5;
+}
+
+.container {
+  padding: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #e91e63;
+}
+
+.buttons {
+  margin: 20px;
+}
+
+button {
+  font-size: 20px;
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff4081;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff5c8d;
+}
+
+.popup {
+  display: none;
+  background-color: #fff;
+  border: 1px solid #e91e63;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+  color: #e91e63;
+}
+
+.popup.fade-in {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Đối với màn hình nhỏ (điện thoại) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+  .title {
+    font-size: 48px;
+  }
+
+  .buttons button {
+    font-size: 30px;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff4081;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .popup {
+    width: 90%; /* Đảm bảo popup vừa với màn hình điện thoại */
+  }
+}
+
+/* Đối với màn hình rất nhỏ (điện thoại di động cỡ nhỏ) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .popup {
+    font-size: 20px; /* Giảm kích thước văn bản trong popup */
+  }
+}
+
+#dobFields {
+  margin: 10px 0;
+}
+
+#dobFields label {
+  display: block;
+  margin: 5px 0;
+}
+
+#dobFields input {
+  margin: 5px;
+  padding: 5px;
+  width: 80px;
+}
